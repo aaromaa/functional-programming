@@ -56,9 +56,9 @@ var movies = [
             release: 2001
         }
     ];
-const mapped = movies.map(obj => {
-        delete obj.director;
-        return obj;
-    }
-);
+const mapped = movies.map(obj =>(
+    {title:obj.title, release:obj.release}
+));
+//console.log(movies);
+
 console.log(mapped);
